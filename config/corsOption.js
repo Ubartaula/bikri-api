@@ -1,4 +1,5 @@
 const whitelist = [
+  "https://www.bi-kri.com",
   "https://bikri.onrender.com",
   "https://bi-kri.com",
   "www.bi-kri.com",
