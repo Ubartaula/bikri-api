@@ -1,4 +1,9 @@
-const whitelist = ["https://bikri.onrender.com"];
+const whitelist = [
+  "https://bikri.onrender.com",
+  "https://bi-kri.com",
+  "www.bi-kri.com",
+  "https://bikri.onrender.com",
+];
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== -1) {
