@@ -71,13 +71,13 @@ const addItem = async (req, res) => {
     const result = await cloudinary.uploader.upload(images[i]?.path, {
       folder: `bikri_${itemName}_by_${email}`,
       use_filename: true,
-      format: "webp",
+      format: "jpg",
       overwrite: true,
       transformation: {
         aspect_ratio: "1.0",
         gravity: "auto",
-        width: 500,
-        height: 500,
+        width: 400,
+        height: 400,
         crop: "fill",
       },
     });

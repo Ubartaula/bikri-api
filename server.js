@@ -16,6 +16,7 @@ const {
   interval,
   deleteUploads,
 } = require("./middleware/CleanRecords");
+const compression = require("compression");
 const app = express();
 const PORT = process.env.PORT || 3100;
 
@@ -36,6 +37,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 //route
+app.use(compression());
 app.use("/", require("./route/rootRoute"));
 app.use("/auth", require("./route/authRoute"));
 app.use("/test", require("./route/testRoute"));
